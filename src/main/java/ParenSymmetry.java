@@ -4,8 +4,23 @@ public class ParenSymmetry {
 
 
     private Boolean isBalanced(String s) {
+        int leftParent =0;
+        int rightParent =0;
+        for(int i = 0; i < s.length(); i++){
+            if(s.charAt(i) == '('){
+                leftParent++;
+            }
+            if(s.charAt(i) == ')'){
+                rightParent++;
+            }
+        }
         // implement this method
-        return null;
+        if(leftParent == rightParent){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     private void checkFile(String filename) {
