@@ -10,7 +10,7 @@ public class ParenSymmetry {
     private Boolean isBalanced(String s) {
         int leftParent =0;
         int rightParent =0;
-        
+
 
         for(int i = 0; i < s.length(); i++){
             if(s.charAt(i) == '('){
