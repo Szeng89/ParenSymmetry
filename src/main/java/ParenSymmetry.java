@@ -30,11 +30,9 @@ public class ParenSymmetry {
     }
 
     private void checkFile(String filename) {
-        // open file named filename
 
-        File file = new File(filename);
-        Scanner scan;
-        // for each line in the file
+        File file = new File("TestStrings0.txt");
+        Scanner scan = new Scanner("/Users/shijin/Labs/ParenSymmetry/TestStrings0.txt");
 
         try{
             scan = new Scanner(file);
@@ -50,10 +48,6 @@ public class ParenSymmetry {
             System.exit(1);
         }
 
-            // read the line
-            // print whether or not the line's parenthesis are balanced
-
-        // CLOSE the file
     }
 
     public static void main(String[] args) {
