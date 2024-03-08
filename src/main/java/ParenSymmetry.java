@@ -29,17 +29,15 @@ public class ParenSymmetry {
         }
     }
 
-    private void checkFile(String filename) {
-
-        File file = new File("TestStrings0.txt");
-        Scanner scan = new Scanner("/Users/shijin/Labs/ParenSymmetry/TestStrings0.txt");
+    private void checkFile() {
 
         try{
-            scan = new Scanner(file);
+            File myfile = new File("/Users/shijin/Labs/ParenSymmetry/TestStrings0.txt");
+            Scanner scan = new Scanner(myfile);
             while (scan.hasNextLine()){
-                String str = scan.nextLine();
-                boolean b = isBalanced(str);
-                System.out.println(b);
+                String line = scan.nextLine();
+                boolean checkln = isBalanced(line);
+                System.out.println(checkln);
             }
             scan.close();
 
@@ -69,6 +67,8 @@ public class ParenSymmetry {
             trues = ps.isBalanced(strToTest);
         }
         printResult(trues, true);
+        ps.checkFile();
+
 
     }
 
