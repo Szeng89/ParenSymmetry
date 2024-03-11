@@ -32,8 +32,8 @@ public class ParenSymmetry {
     private void checkFile() {
 
         try{
-            File myfile = new File("/Users/shijin/Labs/ParenSymmetry/TestStrings0.txt");
-            Scanner scan = new Scanner(myfile);
+//            File myfile = new File("/Users/shijin/Labs/ParenSymmetry/TestStrings0.txt");
+            Scanner scan = new Scanner(new File("/Users/shijin/Labs/ParenSymmetry/TestStrings1.txt"));
             while (scan.hasNextLine()){
                 String line = scan.nextLine();
                 boolean checkln = isBalanced(line);
